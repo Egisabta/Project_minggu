@@ -4,7 +4,7 @@ import 'draw.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.green),
-    title: "what",
+    title: "joox",
     debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-              title: Text("Apaan"),
+              title: Text("Musikku"),
               bottom: TabBar(
                 tabs: [
                   new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
