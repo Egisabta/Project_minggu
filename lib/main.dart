@@ -6,7 +6,7 @@ void main() {
     theme: ThemeData(primarySwatch: Colors.green),
     title: "what",
     debugShowCheckedModeBanner: false,
-    home: BelajarListView(),
+    home: MyApp(),
   ));
 }
 
