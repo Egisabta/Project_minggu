@@ -9,17 +9,24 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Scaffold(
+  Widget build(BuildContext context) => DefaultTabController(
+      length: 3,
+      child: Scaffold(
           appBar: AppBar(
-            title: Text("toko Biru"),
-          ),
+              title: Text("Apaan"),
+              bottom: TabBar(
+                tabs: [
+                  new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
+                  new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
+                  new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
+                ],
+              )),
           drawer: DrawerWidget(),
-          body: Center(child: Text('Belajar Navigation Drawer di Flutter', style: TextStyle(fontSize: 20))),
-        ),
-      ),
-    );
-  }
+          body: TabBarView(
+            children: <Widget>[
+              BelajarListView(),
+              BelajarListView(),
+              BelajarListView(),
+            ],
+          )));
 }
