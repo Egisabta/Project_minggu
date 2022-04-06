@@ -58,6 +58,17 @@ class Artist extends StatelessWidget {
     "The chainsmokers",
     "Metallica"
   ];
+  final List genre = [
+    "pop",
+    "pop",
+    "rock",
+    "blues",
+    "slow",
+    "progressive rock",
+    "rock",
+    "pop",
+    "heavy metal"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +77,7 @@ class Artist extends StatelessWidget {
           return Card(
             child: ListTile(
                 title: Text(artist[index], style: TextStyle(fontSize: 20)),
-                subtitle: Text('album dari ' + artist[index]),
+                subtitle: Text('genre lagu ' + genre[index]),
                 leading: CircleAvatar(
                   child: Text(artist[index][0], // ambil karakter pertama text
                       style: TextStyle(fontSize: 20)),
