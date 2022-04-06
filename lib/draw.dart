@@ -134,6 +134,50 @@ class Musik extends StatelessWidget {
   }
 }
 
+class Recent extends StatelessWidget {
+  final List judul = [
+    "always",
+    "smooth criminal",
+    "smells like teen spirit",
+    "thats way you go",
+    "killer queen",
+    "baby",
+    "i dont wanna miss a thing",
+    "i want something just like this",
+    "the unforgiven"
+  ];
+  final List musik = [
+    "bon jovi",
+    "Michael jackson",
+    "Nirvana",
+    "MLTR",
+    "Queen",
+    "Justin bieber",
+    "Aerosmith",
+    "The chainsmokers",
+    "Metallica"
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+                title: Text(judul[index], style: TextStyle(fontSize: 20)),
+                subtitle: Text('album dari ' + musik[index]),
+                leading: CircleAvatar(
+                  child: Text(judul[index][0], // ambil karakter pertama text
+                      style: TextStyle(fontSize: 20)),
+                )),
+          );
+        },
+        itemCount: judul.length,
+      ),
+    );
+  }
+}
+
 class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   _SliverAppBarDelegate(this._tabBar);
 

@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           body: TabBarView(children: <Widget>[
             Musik(),
             Artist(),
-            Musik(),
+            Recent(),
           ]),
         ),
       );
