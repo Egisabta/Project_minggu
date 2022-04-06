@@ -105,7 +105,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
     currentAccountPicture: ClipOval(
-      child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
+      child: Image(image: AssetImage('assets/foto/user.png'), fit: BoxFit.cover),
     ),
     accountName: Text('Egi Sabta Hiro'),
     accountEmail: Text('egisabta76@gmail.com'),
