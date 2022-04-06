@@ -39,7 +39,7 @@ class DrawerWidget extends StatelessWidget {
                   color: Colors.black54,
                 ),
               )),
-          _drawerItem(icon: Icons.bookmark, text: "finally", onTap: () => print("Tab to family Menu")),
+          _drawerItem(icon: Icons.bookmark, text: "bookmark", onTap: () => print("dalam tahapan pengembangan")),
         ],
       ),
     );
