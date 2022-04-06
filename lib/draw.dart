@@ -110,15 +110,7 @@ class Musik extends StatelessWidget {
     return Scaffold(
       body: ListView.builder(
         itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-                title: Text(judul[index], style: TextStyle(fontSize: 20)),
-                subtitle: Text('album dari ' + musik[index]),
-                leading: CircleAvatar(
-                  child: Text(judul[index][0], // ambil karakter pertama text
-                      style: TextStyle(fontSize: 20)),
-                )),
-          );
+          return Card(child: ListTile(title: Text(judul[index], style: TextStyle(fontSize: 20)), subtitle: Text('album dari ' + musik[index]), leading: new Icon(Icons.audiotrack)));
         },
         itemCount: judul.length,
       ),
@@ -138,16 +130,16 @@ class Recent extends StatelessWidget {
     "i want something just like this",
     "the unforgiven"
   ];
-  final List musik = [
-    "bon jovi",
-    "Michael jackson",
-    "Nirvana",
-    "MLTR",
-    "Queen",
-    "Justin bieber",
-    "Aerosmith",
-    "The chainsmokers",
-    "Metallica"
+  final List waktu = [
+    "22 menit yang lalu",
+    "1 jam yang lalu",
+    "20 menit yang lalu",
+    "5 menit yang lalu",
+    "2 hari yang lalu",
+    "2 jam yang lalu",
+    "baru-baru ini",
+    "baru-baru ini",
+    "3 menit yang lalu"
   ];
   @override
   Widget build(BuildContext context) {
@@ -157,7 +149,7 @@ class Recent extends StatelessWidget {
           return Card(
             child: ListTile(
                 title: Text(judul[index], style: TextStyle(fontSize: 20)),
-                subtitle: Text('album dari ' + musik[index]),
+                subtitle: Text('didengar ' + waktu[index]),
                 leading: CircleAvatar(
                   child: Text(judul[index][0], // ambil karakter pertama text
                       style: TextStyle(fontSize: 20)),
