@@ -74,7 +74,7 @@ class Artist extends StatelessWidget {
     return Scaffold(
       body: ListView.builder(
         itemBuilder: (context, index) {
-          return Card(child: ListTile(title: Text(artist[index], style: TextStyle(fontSize: 20)), subtitle: Text('genre lagu ' + genre[index]), leading: Icon(Icons.access_time)));
+          return Card(child: ListTile(title: Text(artist[index], style: TextStyle(fontSize: 20)), subtitle: Text('genre lagu ' + genre[index]), leading: Icon(Icons.group)));
         },
         itemCount: artist.length,
       ),
