@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'draw.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    theme: ThemeData(primarySwatch: Colors.green),
+    title: "what",
+    debugShowCheckedModeBanner: false,
+    home: BelajarListView(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -10,8 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
-      length: 3,
-      child: Scaffold(
+        length: 3,
+        child: Scaffold(
           appBar: AppBar(
               title: Text("Apaan"),
               bottom: TabBar(
@@ -22,11 +27,11 @@ class MyApp extends StatelessWidget {
                 ],
               )),
           drawer: DrawerWidget(),
-          body: TabBarView(
-            children: <Widget>[
-              BelajarListView(),
-              BelajarListView(),
-              BelajarListView(),
-            ],
-          )));
+          body: TabBarView(children: <Widget>[
+            BelajarListView(),
+            BelajarListView(),
+            BelajarListView(),
+          ]),
+        ),
+      );
 }
