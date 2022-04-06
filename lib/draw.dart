@@ -35,10 +35,10 @@ Widget _drawerHeader() {
       child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
     ),
     otherAccountsPictures: [
-      CircleAvatar(
+      ClipOval(
         child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
       ),
-      CircleAvatar(
+      ClipOval(
         child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
       )
     ],
