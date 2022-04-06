@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
               bottom: TabBar(
                 tabs: [
                   new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
-                  new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
-                  new Tab(icon: new Icon(Icons.audiotrack), text: "music"),
+                  new Tab(icon: new Icon(Icons.group), text: "artist"),
+                  new Tab(icon: new Icon(Icons.access_time), text: "recent"),
                 ],
               )),
           drawer: DrawerWidget(),
