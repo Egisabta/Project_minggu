@@ -8,10 +8,9 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           _drawerHeader(),
-          _drawerItem(icon: Icons.folder, text: 'MyFolder', onTap: () => print("Tap My File")),
+          _drawerItem(icon: (Icons.audiotrack), text: 'music', onTap: () => print("Tap My File")),
           _drawerItem(icon: Icons.group, text: 'Shared With Me', onTap: () => print("Tab To Shared")),
           _drawerItem(icon: Icons.access_time, text: 'Recent', onTap: () => print("Tab to recent menu")),
-          _drawerItem(icon: Icons.delete, text: 'deleted', onTap: () => print("Tab to deleted menu")),
           Divider(height: 20.0, thickness: 1),
           Padding(
               padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
