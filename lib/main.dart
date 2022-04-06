@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Scaffold(
           appBar: AppBar(
-            title: Text("Belajar Drawer SlideBar"),
+            title: Text(text: Center "toko Biru"),
           ),
           drawer: DrawerWidget(),
           body: Center(child: Text('Belajar Navigation Drawer di Flutter', style: TextStyle(fontSize: 20))),
