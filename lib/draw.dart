@@ -46,8 +46,8 @@ class DrawerWidget extends StatelessWidget {
   }
 }
 
-class BelajarListView extends StatelessWidget {
-  final List bulan = [
+class NamaArtist extends StatelessWidget {
+  final List artist = [
     "Justin bieber",
     "Michael jackson",
     "Nirvana",
@@ -65,15 +65,59 @@ class BelajarListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-                title: Text(bulan[index], style: TextStyle(fontSize: 20)),
-                subtitle: Text('album dari ' + bulan[index]),
+                title: Text(artist[index], style: TextStyle(fontSize: 20)),
+                subtitle: Text('album dari ' + artist[index]),
                 leading: CircleAvatar(
-                  child: Text(bulan[index][0], // ambil karakter pertama text
+                  child: Text(artist[index][0], // ambil karakter pertama text
                       style: TextStyle(fontSize: 20)),
                 )),
           );
         },
-        itemCount: bulan.length,
+        itemCount: artist.length,
+      ),
+    );
+  }
+}
+
+class ListMusik extends StatelessWidget {
+  final List judul = [
+    "baby",
+    "smooth criminal",
+    "smells like teen spirit",
+    "thats way you go",
+    "killer queen",
+    "always",
+    "i dont wanna miss a thing",
+    "i want something just like this",
+    "the unforgiven"
+  ];
+  final List musik = [
+    "Justin bieber",
+    "Michael jackson",
+    "Nirvana",
+    "MLTR",
+    "Queen",
+    "Bon jovi",
+    "Aerosmith",
+    "The chainsmokers",
+    "Metallica"
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+                title: Text(judul[index], style: TextStyle(fontSize: 20)),
+                subtitle: Text('album dari ' + musik[index]),
+                leading: CircleAvatar(
+                  child: Text(judul[index][0], // ambil karakter pertama text
+                      style: TextStyle(fontSize: 20)),
+                )),
+          );
+        },
+        itemCount: judul.length,
       ),
     );
   }
