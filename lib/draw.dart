@@ -15,8 +15,20 @@ class DrawerWidget extends StatelessWidget {
                 DefaultTabController.of(context)?.animateTo(0);
                 Navigator.pop(context);
               }),
-          _drawerItem(icon: (Icons.group), text: 'Shared With Me', onTap: () => print("Tab To Shared")),
-          _drawerItem(icon: Icons.access_time, text: 'Recent', onTap: () => print("Tab to recent menu")),
+          _drawerItem(
+              icon: (Icons.group),
+              text: 'Artist',
+              onTap: () {
+                DefaultTabController.of(context)?.animateTo(1);
+                Navigator.pop(context);
+              }),
+          _drawerItem(
+              icon: (Icons.access_time),
+              text: 'Recent',
+              onTap: () {
+                DefaultTabController.of(context)?.animateTo(2);
+                Navigator.pop(context);
+              }),
           Divider(height: 20.0, thickness: 1),
           Padding(
               padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
