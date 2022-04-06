@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
             title: Text("Belajar Drawer SlideBar"),
           ),
           drawer: DrawerWidget(),
-          endDrawer: DrawerWidget(),
           body: Center(child: Text('Belajar Navigation Drawer di Flutter', style: TextStyle(fontSize: 20))),
         ),
       ),
