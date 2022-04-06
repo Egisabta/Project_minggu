@@ -34,14 +34,6 @@ Widget _drawerHeader() {
     currentAccountPicture: ClipOval(
       child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
     ),
-    otherAccountsPictures: [
-      ClipOval(
-        child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
-      ),
-      ClipOval(
-        child: Image(image: AssetImage('assets/foto/boruto.jpg'), fit: BoxFit.cover),
-      )
-    ],
     accountName: Text('Egi Sabta Hiro'),
     accountEmail: Text('egisabta76@gmail.com'),
   );
