@@ -46,7 +46,7 @@ class DrawerWidget extends StatelessWidget {
   }
 }
 
-class NamaArtist extends StatelessWidget {
+class Artist extends StatelessWidget {
   final List artist = [
     "Justin bieber",
     "Michael jackson",
@@ -79,7 +79,7 @@ class NamaArtist extends StatelessWidget {
   }
 }
 
-class ListMusik extends StatelessWidget {
+class Musik extends StatelessWidget {
   final List judul = [
     "baby",
     "smooth criminal",
