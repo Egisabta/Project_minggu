@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
             Home(),
-            Body(),
           ]),
         ),
       );
