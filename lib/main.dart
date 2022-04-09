@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
-        length: 3,
         child: Scaffold(
           appBar: AppBar(
             title: Text("MyApps"),
