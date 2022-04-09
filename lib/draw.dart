@@ -81,7 +81,7 @@ Widget _drawerHeader() {
 
 Widget _drawerItem({required IconData icon, required String text, required GestureTapCallback onTap}) {
   return ListTile(
-    title: Column(
+    title: Row(
       children: <Widget>[
         Icon(icon),
         Padding(
