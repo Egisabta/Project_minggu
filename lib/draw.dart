@@ -87,6 +87,12 @@ class Portofolio extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(10),
             width: 150,
+            height: 1,
+            color: Colors.blue,
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            width: 150,
             height: 150,
             color: Colors.blue,
           ),
