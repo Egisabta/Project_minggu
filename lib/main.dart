@@ -26,12 +26,12 @@ class MyApp extends StatelessWidget {
                   new Tab(icon: new Icon(Icons.access_time), text: "recent"),
                 ],
               )),
-          drawer: DrawerWidget(),
-          body: TabBarView(children: <Widget>[
-            // Musik(),
-            // Artist(),
-            // Recent(),
-          ]),
+          // drawer: DrawerWidget(),
+          // body: TabBarView(children: <Widget>[
+          //   // Musik(),
+          //   // Artist(),
+          //   // Recent(),
+          // ]),
         ),
       );
 }
