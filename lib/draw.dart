@@ -63,7 +63,7 @@ class Profil extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.max,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text('Nama :Egi Sabta Hiro'),
           Text('Kelas : 2A'),
