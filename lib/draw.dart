@@ -32,9 +32,24 @@ class DrawerWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
           ),
-          _drawerItem(icon: Icons.wysiwyg, text: "Keterangan", onTap: () => print("dalam tahapan pengembangan")),
-          _drawerItem(icon: Icons.app_settings_alt_outlined, text: "Pengaturan", onTap: () => print("dalam tahapan pengembangan")),
-          _drawerItem(icon: Icons.image_outlined, text: "Galeri", onTap: () => print("dalam tahapan pengembangan")),
+          _drawerItem(
+              icon: Icons.wysiwyg,
+              text: "Keterangan",
+              onTap: () {
+                Navigator.pushNamed(context, '/keterangan');
+              }),
+          _drawerItem(
+              icon: Icons.app_settings_alt_outlined,
+              text: "Pengaturan",
+              onTap: () {
+                Navigator.pushNamed(context, '/pengaturan');
+              }),
+          _drawerItem(
+              icon: Icons.image_outlined,
+              text: "Galeri",
+              onTap: () {
+                Navigator.pushNamed(context, '/galeri');
+              }),
         ],
       ),
     );
@@ -127,28 +142,44 @@ class Kontak extends StatelessWidget {
   }
 }
 
-// class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
-//   _SliverAppBarDelegate(this._tabBar);
+class Keterangan extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0000000),
+      body: Align(
+        child: Text('Ini Adalah Background'),
+        alignment: Alignment.center,
+      ),
+    );
+  }
+}
 
-//   final TabBar _tabBar;
+class Pengaturan extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0000000),
+      body: Align(
+        child: Text('Ini Adalah Background'),
+        alignment: Alignment.center,
+      ),
+    );
+  }
+}
 
-//   @override
-//   double get minExtent => _tabBar.preferredSize.height;
-//   @override
-//   double get maxExtent => _tabBar.preferredSize.height;
-
-//   @override
-//   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
-//     return new Container(
-//       child: _tabBar,
-//     );
-//   }
-
-//   @override
-//   bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
-//     return false;
-//   }
-// }
+class Galeri extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0000000),
+      body: Align(
+        child: Text('Ini Adalah Background'),
+        alignment: Alignment.center,
+      ),
+    );
+  }
+}
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(

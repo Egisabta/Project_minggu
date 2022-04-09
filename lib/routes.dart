@@ -13,6 +13,12 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Portofolio());
       case '/kontak':
         return MaterialPageRoute(builder: (_) => Kontak());
+      case '/keterangan':
+        return MaterialPageRoute(builder: (_) => Keterangan());
+      case '/pengaturan':
+        return MaterialPageRoute(builder: (_) => Pengaturan());
+      case '/galeri':
+        return MaterialPageRoute(builder: (_) => Galeri());
       default:
         return _errorRoute();
     }
