@@ -81,18 +81,20 @@ Widget _drawerHeader() {
 
 Widget _drawerItem({required IconData icon, required String text, required GestureTapCallback onTap}) {
   return ListTile(
-    children: <Widget>[
-      Icon(icon),
-      Padding(
-        padding: EdgeInsets.only(left: 25.0),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
+    title: Column(
+      children: <Widget>[
+        Icon(icon),
+        Padding(
+          padding: EdgeInsets.only(left: 25.0),
+          child: Text(
+            text,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-      ),
-    ],
+      ],
+    ),
     onTap: onTap,
   );
 }
