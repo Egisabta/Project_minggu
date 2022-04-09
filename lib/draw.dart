@@ -64,9 +64,9 @@ class Profil extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text('Nama :Egi Sabta Hiro'),
-          Text('Kelas: 2A'),
+          Text('Kelas : 2A'),
           Text('NIM  : 362055401002'),
-          Text('Prodi: Teknik Informatika'),
+          Text('Prodi : Teknik Informatika'),
         ],
       ),
     );
