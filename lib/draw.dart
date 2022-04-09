@@ -29,7 +29,7 @@ class DrawerWidget extends StatelessWidget {
                 DefaultTabController.of(context)?.animateTo(2);
                 Navigator.pop(context);
               }),
-          Divider(height: 20.0, thickness: 10),
+          Divider(height: 20.0, thickness: 5),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
           ),

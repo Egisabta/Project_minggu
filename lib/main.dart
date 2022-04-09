@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Musikku"),
+            title: Text("MyApps"),
             // bottom: TabBar(
             //   tabs: [
             //     new Tab(icon: new Icon(Icons.account_circle_outlined), text: "Profil"),
