@@ -24,7 +24,7 @@ class DrawerWidget extends StatelessWidget {
               }),
           _drawerItem(
               icon: (Icons.mail),
-              text: 'Contact',
+              text: 'Kontak',
               onTap: () {
                 DefaultTabController.of(context)?.animateTo(2);
                 Navigator.pop(context);
@@ -33,7 +33,9 @@ class DrawerWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
           ),
-          _drawerItem(icon: Icons.app_settings_alt_outlined, text: "settings", onTap: () => print("dalam tahapan pengembangan")),
+          _drawerItem(icon: Icons.wysiwyg, text: "Keterangan", onTap: () => print("dalam tahapan pengembangan")),
+          _drawerItem(icon: Icons.app_settings_alt_outlined, text: "Pengaturan", onTap: () => print("dalam tahapan pengembangan")),
+          _drawerItem(icon: Icons.image, text: "Galeri", onTap: () => print("dalam tahapan pengembangan")),
         ],
       ),
     );
