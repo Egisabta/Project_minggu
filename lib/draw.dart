@@ -61,7 +61,7 @@ class Profil extends StatelessWidget {
         title: Text('Profil'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Text('Nama : Egi Sabta Hiro'),
           Text('Kelas: 2A'),
