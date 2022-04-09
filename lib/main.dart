@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: Text("MyApps"),
-            backgroundColor: Colors.white,
           ),
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
