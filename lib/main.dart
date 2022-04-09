@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
               )),
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
-            Musik(),
-            Artist(),
-            Recent(),
+            // Musik(),
+            // Artist(),
+            // Recent(),
           ]),
         ),
       );
