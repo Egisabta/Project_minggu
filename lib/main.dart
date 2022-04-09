@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
-        length: 1,
+        length: 2,
         child: Scaffold(
           appBar: AppBar(
             title: Text("MyApps"),
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
             Home(),
+            Body(),
           ]),
         ),
       );

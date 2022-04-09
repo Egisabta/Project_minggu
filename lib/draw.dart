@@ -48,6 +48,13 @@ class Home extends StatelessWidget {
   }
 }
 
+class Body extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Text('How Are You?');
+  }
+}
+
 class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
