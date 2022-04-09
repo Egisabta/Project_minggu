@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -60,6 +61,7 @@ class Profil extends StatelessWidget {
         title: Text('Profil'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Text('Nama : Egi Sabta Hiro'),
           Text('Kelas: 2A'),
