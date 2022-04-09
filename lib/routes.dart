@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'draw.dart';
+import 'https://flutlab.io/root/app/lib/main.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -8,9 +9,9 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-      // return MaterialPageRoute(builder: (_) => HomePage());
-      case '/about':
-      // return MaterialPageRoute(builder: (_) => Musik());
+        return MaterialPageRoute(builder: (_) => MyApp());
+      case '/profil':
+        return MaterialPageRoute(builder: (_) => Profil());
       case '/portofolio':
       // return MaterialPageRoute(builder: (_) => Artist());
       case '/contact':

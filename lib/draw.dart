@@ -12,21 +12,18 @@ class DrawerWidget extends StatelessWidget {
               icon: (Icons.account_circle_outlined),
               text: 'Profil',
               onTap: () {
-                DefaultTabController.of(context)?.animateTo(0);
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/profil');
               }),
           _drawerItem(
               icon: (Icons.account_box_outlined),
               text: 'Portofolio',
               onTap: () {
-                DefaultTabController.of(context)?.animateTo(1);
                 Navigator.pop(context);
               }),
           _drawerItem(
               icon: (Icons.mail_outlined),
               text: 'Kontak',
               onTap: () {
-                DefaultTabController.of(context)?.animateTo(2);
                 Navigator.pop(context);
               }),
           Divider(height: 20.0, thickness: 3),
@@ -37,6 +34,22 @@ class DrawerWidget extends StatelessWidget {
           _drawerItem(icon: Icons.app_settings_alt_outlined, text: "Pengaturan", onTap: () => print("dalam tahapan pengembangan")),
           _drawerItem(icon: Icons.image_outlined, text: "Galeri", onTap: () => print("dalam tahapan pengembangan")),
         ],
+      ),
+    );
+  }
+}
+
+class Profil extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Align(
+        alignment: Alignment.centerLeft,
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+        ),
       ),
     );
   }
