@@ -18,13 +18,13 @@ class DrawerWidget extends StatelessWidget {
               icon: (Icons.account_box_outlined),
               text: 'Portofolio',
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/portofolio');
               }),
           _drawerItem(
               icon: (Icons.mail_outlined),
               text: 'Kontak',
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/kontak');
               }),
           Divider(height: 20.0, thickness: 3),
           Padding(
@@ -39,19 +39,27 @@ class DrawerWidget extends StatelessWidget {
   }
 }
 
-// class Homepage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('Homepage'),
-//       ),
-//       body: Text('mother'),
-//     );
-//   }
-// }
-
 class Profil extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Profil'),
+      ),
+      body: Align(
+        Image.network(''),
+        alignment: Alignment.topLeft,
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+        ),
+      ),
+    );
+  }
+}
+
+class Portofolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
