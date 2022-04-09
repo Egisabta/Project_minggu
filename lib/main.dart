@@ -15,16 +15,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
-        length: 3,
+        length: 1,
         child: Scaffold(
           appBar: AppBar(
             title: Text("MyApps"),
           ),
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
-            Profil(),
-            Portofolio(),
-            Kontak(),
+            Home(),
           ]),
         ),
       );
