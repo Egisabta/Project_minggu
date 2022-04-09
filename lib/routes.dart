@@ -8,7 +8,7 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => HomePage());
+      // return MaterialPageRoute(builder: (_) => HomePage());
       case '/about':
         return MaterialPageRoute(builder: (_) => Musik());
       case '/portofolio':
