@@ -59,9 +59,13 @@ class Profil extends StatelessWidget {
       appBar: AppBar(
         title: Text('Profil'),
       ),
-      body: Align(
-        child: Image.asset('assets/foto/user.png'),
-        alignment: Alignment.topCenter,
+      body: Column(
+        children: <Widget>[
+          Text('Nama : Egi Sabta Hiro'),
+          Text('Kelas : 2A'),
+          Text('NIM : 362055401002'),
+          Text('Prodi : Teknik Informatika'),
+        ],
       ),
     );
   }
