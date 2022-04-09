@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'draw.dart';
 import 'routes.dart';
 
 void main() {
@@ -13,24 +14,17 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        backgroundColor: Color(0xff00BCD1),
-        appBar: AppBar(
-          title: Text('Flutter Screen Background Color Example'),
+  Widget build(BuildContext context) => DefaultTabController(
+        length: 1,
+        child: Scaffold(
+          backgroundColor: Color(0xff00BCD1),
+          appBar: AppBar(
+            title: Text("MyApps"),
+          ),
+          drawer: DrawerWidget(),
+          body: TabBarView(children: <Widget>[
+            Profil(),
+          ]),
         ),
-        body: Center(child: Body()),
-      ),
-    );
-  }
-}
-
-/// This is the stateless widget that the main application instantiates.
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Text('How Are You?');
-  }
+      );
 }
