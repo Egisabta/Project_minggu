@@ -48,7 +48,7 @@ class Profil extends StatelessWidget {
       ),
       body: Align(
         child: Image.asset('assets/foto/user.png'),
-        alignment: Alignment.topLeft,
+        alignment: Alignment.topCenter,
       ),
     );
   }
