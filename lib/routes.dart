@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'draw.dart';
-import 'https://flutlab.io/root/app/lib/main.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
