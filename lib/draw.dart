@@ -42,14 +42,16 @@ class DrawerWidget extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-      appBar: AppBar(
-      ),
+    return Scaffold(
+      appBar: AppBar(),
       body: Align(
         child: Image.asset('assets/foto/user.png'),
         alignment: Alignment.topCenter,
-      );
+      ),
+    );
   }
 }
+
 class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -83,6 +85,7 @@ class Portofolio extends StatelessWidget {
     );
   }
 }
+
 class Kontak extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
