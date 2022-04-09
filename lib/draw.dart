@@ -83,7 +83,7 @@ class Portofolio extends StatelessWidget {
         title: Text('Portofolio'),
       ),
       body: Column(
-        children: Row[
+        children: [
           Container(
             margin: EdgeInsets.all(10),
             width: 150,
