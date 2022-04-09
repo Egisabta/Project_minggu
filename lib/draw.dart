@@ -83,7 +83,7 @@ class Portofolio extends StatelessWidget {
         title: Text('Portofolio'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
             margin: EdgeInsets.all(10),
