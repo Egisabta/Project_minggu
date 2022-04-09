@@ -6,6 +6,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     onGenerateRoute: RouteGenerator.generateRoute,
+    home: MyApp(),
   ));
 }
 
