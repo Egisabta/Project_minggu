@@ -48,8 +48,8 @@ class Profil extends StatelessWidget {
       ),
       body: Align(
         child: Image.asset('assets/foto/user.png'),
-        text: Text('Nama: Egi Sabta Hiro'),
         alignment: Alignment.topCenter,
+        child: 
       ),
     );
   }
