@@ -33,7 +33,7 @@ class DrawerWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
           ),
-          _drawerItem(icon: Icons.image, text: "bookmark", onTap: () => print("dalam tahapan pengembangan")),
+          _drawerItem(icon: Icons.app_settings_alt_outlined, text: "settings", onTap: () => print("dalam tahapan pengembangan")),
         ],
       ),
     );
