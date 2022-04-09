@@ -9,37 +9,31 @@ class DrawerWidget extends StatelessWidget {
         children: <Widget>[
           _drawerHeader(),
           _drawerItem(
-              icon: (Icons.audiotrack),
-              text: 'music',
+              icon: (Icons.account_circle_outlined),
+              text: 'Profil',
               onTap: () {
                 DefaultTabController.of(context)?.animateTo(0);
                 Navigator.pop(context);
               }),
           _drawerItem(
-              icon: (Icons.group),
-              text: 'Artist',
+              icon: (Icons.account_box_outlined),
+              text: 'Portofolio',
               onTap: () {
                 DefaultTabController.of(context)?.animateTo(1);
                 Navigator.pop(context);
               }),
           _drawerItem(
-              icon: (Icons.access_time),
-              text: 'Recent',
+              icon: (Icons.mail),
+              text: 'Contact',
               onTap: () {
                 DefaultTabController.of(context)?.animateTo(2);
                 Navigator.pop(context);
               }),
-          Divider(height: 20.0, thickness: 1),
+          Divider(height: 20.0, thickness: 10),
           Padding(
-              padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
-              child: Text(
-                "label",
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black54,
-                ),
-              )),
-          _drawerItem(icon: Icons.bookmark, text: "bookmark", onTap: () => print("dalam tahapan pengembangan")),
+            padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
+          ),
+          _drawerItem(icon: Icons.image, text: "bookmark", onTap: () => print("dalam tahapan pengembangan")),
         ],
       ),
     );
