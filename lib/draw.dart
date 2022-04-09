@@ -42,10 +42,8 @@ class DrawerWidget extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
       backgroundColor: Color(0xff00BCD1),
       appBar: AppBar(),
-    );
   }
 }
 
