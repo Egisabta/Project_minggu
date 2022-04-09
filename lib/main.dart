@@ -17,13 +17,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => DefaultTabController(
         length: 1,
         child: Scaffold(
-          backgroundColor: Color(0xff00BCD1),
           appBar: AppBar(
             title: Text("MyApps"),
           ),
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
-            Profil(),
+            Home(),
           ]),
         ),
       );

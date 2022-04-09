@@ -43,11 +43,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff00BCD1),
       appBar: AppBar(),
-      body: Align(
-        child: Image.asset('assets/foto/user.png'),
-        alignment: Alignment.topCenter,
-      ),
     );
   }
 }
