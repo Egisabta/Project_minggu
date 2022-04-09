@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
           drawer: DrawerWidget(),
           body: TabBarView(children: <Widget>[
             Profil(),
-            // Artist(),
-            // Recent(),
+            Portofolio(),
+            Kontak(),
           ]),
         ),
       );
