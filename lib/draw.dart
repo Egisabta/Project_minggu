@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -62,6 +63,7 @@ class Profil extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text('Nama :Egi Sabta Hiro'),
           Text('Kelas : 2A'),
