@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'draw.dart';
+import 'routes.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.green),
-    title: "joox",
     debugShowCheckedModeBanner: false,
-    home: MyApp(),
+    onGenerateRoute: RouteGenerator.generateRoute,
   ));
 }
 
