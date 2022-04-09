@@ -47,13 +47,8 @@ class Profil extends StatelessWidget {
         title: Text('Profil'),
       ),
       body: Align(
-        Image.network(''),
+        child: Image.asset('assets/foto/user.png'),
         alignment: Alignment.topLeft,
-        child: Container(
-          width: 200,
-          height: 200,
-          color: Colors.blue,
-        ),
       ),
     );
   }
