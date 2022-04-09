@@ -75,7 +75,7 @@ class Portofolio extends StatelessWidget {
         title: Text('Portofolio'),
       ),
       body: Align(
-        alignment: Alignment.centerLeft,
+        alignment: Alignment.topLeft,
         child: Container(
           width: 200,
           height: 200,
