@@ -10,10 +10,9 @@ class RouteGenerator {
       case '/profil':
         return MaterialPageRoute(builder: (_) => Profil());
       case '/portofolio':
-      // return MaterialPageRoute(builder: (_) => Artist());
-      case '/contact':
-      // return MaterialPageRoute(builder: (_) => Recent());
-      // return MaterialPageRoute(builder: (_) => AboutPage(args));
+        return MaterialPageRoute(builder: (_) => Portofolio());
+      case '/kontak':
+        return MaterialPageRoute(builder: (_) => Kontak());
       default:
         return _errorRoute();
     }

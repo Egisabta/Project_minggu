@@ -59,7 +59,26 @@ class Portofolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profil'),
+        title: Text('Portofolio'),
+      ),
+      body: Align(
+        alignment: Alignment.centerLeft,
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+        ),
+      ),
+    );
+  }
+}
+
+class Kontak extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Kontak'),
       ),
       body: Align(
         alignment: Alignment.centerLeft,
