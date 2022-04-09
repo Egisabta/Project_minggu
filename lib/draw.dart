@@ -46,28 +46,28 @@ class DrawerWidget extends StatelessWidget {
   }
 }
 
-// class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
-//   _SliverAppBarDelegate(this._tabBar);
+class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
+  _SliverAppBarDelegate(this._tabBar);
 
-//   final TabBar _tabBar;
+  final TabBar _tabBar;
 
-//   @override
-//   double get minExtent => _tabBar.preferredSize.height;
-//   @override
-//   double get maxExtent => _tabBar.preferredSize.height;
+  @override
+  double get minExtent => _tabBar.preferredSize.height;
+  @override
+  double get maxExtent => _tabBar.preferredSize.height;
 
-//   @override
-//   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
-//     return new Container(
-//       child: _tabBar,
-//     );
-//   }
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return new Container(
+      child: _tabBar,
+    );
+  }
 
-//   @override
-//   bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
-//     return false;
-//   }
-// }
+  @override
+  bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
+    return false;
+  }
+}
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
@@ -79,22 +79,22 @@ Widget _drawerHeader() {
   );
 }
 
-Widget _drawerItem({required IconData icon, required String text, required GestureTapCallback onTap}) {
-  return ListTile(
-    title: Row(
-      children: <Widget>[
-        Icon(icon),
-        Padding(
-          padding: EdgeInsets.only(left: 25.0),
-          child: Text(
-            text,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ],
-    ),
-    onTap: onTap,
-  );
-}
+// Widget _drawerItem({required IconData icon, required String text, required GestureTapCallback onTap}) {
+//   return ListTile(
+//     title: Row(
+//       children: <Widget>[
+//         Icon(icon),
+//         Padding(
+//           padding: EdgeInsets.only(left: 25.0),
+//           child: Text(
+//             text,
+//             style: TextStyle(
+//               fontWeight: FontWeight.bold,
+//             ),
+//           ),
+//         ),
+//       ],
+//     ),
+//     onTap: onTap,
+//   );
+// }
