@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -98,7 +96,7 @@ class Portofolio extends StatelessWidget {
         title: Text('Portofolio'),
       ),
       body: Row(
-        children: [
+        children: <Widget>[
           Container(
             margin: EdgeInsets.all(10),
             width: 150,
