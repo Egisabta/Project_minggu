@@ -80,7 +80,6 @@ class Profil extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(5),
             width: 200,
             height: 150,
             color: Colors.blue,
