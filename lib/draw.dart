@@ -96,24 +96,24 @@ class Portofolio extends StatelessWidget {
       appBar: AppBar(
         title: Text('Portofolio'),
       ),
-      body: Row(
+      body: Column(
         children: <Widget>[
           Container(
             margin: EdgeInsets.all(10),
-            width: 150,
-            height: 150,
+            width: 200,
+            height: 200,
             color: Colors.blue,
           ),
           Container(
             margin: EdgeInsets.all(10),
-            width: 150,
-            height: 150,
+            width: 200,
+            height: 200,
             color: Colors.blue,
           ),
           Container(
             margin: EdgeInsets.all(10),
-            width: 150,
-            height: 150,
+            width: 200,
+            height: 200,
             color: Colors.blue,
           ),
         ],
