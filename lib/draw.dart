@@ -79,10 +79,8 @@ class Profil extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(
-            width: 200,
-            height: 150,
-            color: Colors.blue,
+          ClipOval(
+            child: Image.asset('assets/foto/user.png'),
           ),
           Text('Nama :Egi Sabta Hiro'),
           Text('Kelas : 2A'),
@@ -104,6 +102,7 @@ class Portofolio extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Container(
+            child: Image.asset(''),
             margin: EdgeInsets.all(10),
             width: 200,
             height: 150,
