@@ -142,13 +142,21 @@ class Kontak extends StatelessWidget {
       appBar: AppBar(
         title: Text('Kontak'),
       ),
-      body: Align(
-        alignment: Alignment.centerLeft,
-        child: Container(
-          width: 200,
-          height: 200,
-          color: Colors.blue,
-        ),
+      body: Column(
+        children: <Widget>[
+          Text(
+            'Nama : Egi Sabta Hiro',
+            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+          ),
+          Text(
+            'Email : Egisabta54@gmail.com',
+            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+          ),
+          Text(
+            'Phone : 08999078900',
+            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+          ),
+        ],
       ),
     );
   }
