@@ -77,10 +77,10 @@ class Profil extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(10),
+            margin: EdgeInsets.all(5),
             width: 200,
             height: 150,
             color: Colors.blue,
