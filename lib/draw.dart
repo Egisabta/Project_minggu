@@ -114,21 +114,23 @@ class Portofolio extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Container(
-            child: Image.asset(''),
+            child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
-            width: 200,
+            width: 300,
             height: 150,
             color: Colors.blue,
           ),
           Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
-            width: 200,
+            width: 300,
             height: 150,
             color: Colors.blue,
           ),
           Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
-            width: 200,
+            width: 300,
             height: 150,
             color: Colors.blue,
           ),
