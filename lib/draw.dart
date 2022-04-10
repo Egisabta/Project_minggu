@@ -147,7 +147,7 @@ class Keterangan extends StatelessWidget {
     return Scaffold(
       body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text('keterangan'),
         ],
