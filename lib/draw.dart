@@ -201,9 +201,29 @@ class Galeri extends StatelessWidget {
       appBar: AppBar(
         title: Text('galeri'),
       ),
-      body: Align(
-        child: Text('Ini Adalah Background'),
-        alignment: Alignment.center,
+      body: ListView(
+        children: <Widget>[
+          Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
+            margin: EdgeInsets.all(10),
+          ),
+          Text('boruto 1'),
+          Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
+            margin: EdgeInsets.all(10),
+          ),
+          Text('boruto 1'),
+          Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
+            margin: EdgeInsets.all(10),
+          ),
+          Text('boruto 1'),
+          Container(
+            child: Image.asset('assets/foto/boruto.jpg'),
+            margin: EdgeInsets.all(10),
+          ),
+          Text('boruto 1'),
+        ],
       ),
     );
   }
