@@ -202,6 +202,7 @@ class Galeri extends StatelessWidget {
         title: Text('galeri'),
       ),
       body: ListView(
+        crossAxisCount: 2,
         children: <Widget>[
           Container(
             child: Image.asset('assets/foto/kantor.gif'),
