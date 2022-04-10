@@ -212,17 +212,21 @@ class Galeri extends StatelessWidget {
             child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
           ),
-          Text('boruto 1'),
+          Text('boruto 2'),
           Container(
             child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
           ),
-          Text('boruto 1'),
+          Text('boruto 3'),
           Container(
             child: Image.asset('assets/foto/boruto.jpg'),
             margin: EdgeInsets.all(10),
           ),
-          Text('boruto 1'),
+          Text(
+            'Boruto 4',
+            style: TextStyle(fontWeight: FontWeight.bold, height: 2),
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );
