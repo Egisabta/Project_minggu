@@ -84,7 +84,7 @@ class Profil extends StatelessWidget {
           ),
           Text(
             'Nama :Egi Sabta Hiro',
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: TextStyle(fontWeight: FontWeight.bold, height: 5, fontSize: 10),
           ),
           Text(
             'Kelas : 2A',
