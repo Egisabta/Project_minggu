@@ -143,6 +143,7 @@ class Kontak extends StatelessWidget {
         title: Text('Kontak'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text(
             'Nama : Egi Sabta Hiro',
