@@ -147,15 +147,15 @@ class Kontak extends StatelessWidget {
         children: <Widget>[
           Text(
             'Nama : Egi Sabta Hiro',
-            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+            style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
           ),
           Text(
             'Email : Egisabta54@gmail.com',
-            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+            style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
           ),
           Text(
             'Phone : 08999078900',
-            style: TextStyle(fontWeight: FontWeight.bold, height: 5),
+            style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
           ),
         ],
       ),
