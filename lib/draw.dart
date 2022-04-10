@@ -204,38 +204,38 @@ class Galeri extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-            child: Image.asset('assets/foto/boruto.jpg'),
+            child: Image.asset('assets/foto/kantor.gif'),
             margin: EdgeInsets.all(10),
           ),
           Text(
-            'Boruto 1',
+            'Animasi 1',
             style: TextStyle(fontWeight: FontWeight.bold, height: 2),
             textAlign: TextAlign.center,
           ),
           Container(
-            child: Image.asset('assets/foto/boruto.jpg'),
+            child: Image.asset('assets/foto/kantor.gif'),
             margin: EdgeInsets.all(10),
           ),
           Text(
-            'Boruto 2',
+            'Animasi 2',
             style: TextStyle(fontWeight: FontWeight.bold, height: 2),
             textAlign: TextAlign.center,
           ),
           Container(
-            child: Image.asset('assets/foto/boruto.jpg'),
+            child: Image.asset('assets/foto/kantor.gif'),
             margin: EdgeInsets.all(10),
           ),
           Text(
-            'Boruto 3',
+            'Animasi 3',
             style: TextStyle(fontWeight: FontWeight.bold, height: 2),
             textAlign: TextAlign.center,
           ),
           Container(
-            child: Image.asset('assets/foto/boruto.jpg'),
+            child: Image.asset('assets/foto/kantor.gif'),
             margin: EdgeInsets.all(10),
           ),
           Text(
-            'Boruto 4',
+            'Animasi 4',
             style: TextStyle(fontWeight: FontWeight.bold, height: 2),
             textAlign: TextAlign.center,
           ),
