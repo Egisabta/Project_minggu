@@ -145,12 +145,9 @@ class Keterangan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text('keterangan'),
-        ],
+      body: Align(
+        child: Text('Keterangan Belum diisi'),
+        alignment: Alignment.center,
       ),
     );
   }
