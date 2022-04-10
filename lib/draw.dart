@@ -82,7 +82,10 @@ class Profil extends StatelessWidget {
           ClipOval(
             child: Image.asset('assets/foto/user.png'),
           ),
-          Text('Nama :Egi Sabta Hiro'),
+          Text(
+            'Nama :Egi Sabta Hiro',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           Text('Kelas : 2A'),
           Text('NIM  : 362055401002'),
           Text('Prodi : Teknik Informatika'),
