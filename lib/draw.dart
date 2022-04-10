@@ -111,7 +111,7 @@ class Portofolio extends StatelessWidget {
       appBar: AppBar(
         title: Text('Portofolio'),
       ),
-      body: Column(
+      body: ListView(
         children: <Widget>[
           Container(
             child: Image.asset('assets/foto/boruto.jpg'),
