@@ -144,10 +144,10 @@ class Keterangan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0000000),
-      body: Align(
-        child: Text('Ini Adalah Background'),
-        alignment: Alignment.center,
+      body: Column(
+        children: <Widget>[
+          Text('Information Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+        ],
       ),
     );
   }
@@ -157,7 +157,6 @@ class Pengaturan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0000000),
       body: Align(
         child: Text('Ini Adalah Background'),
         alignment: Alignment.center,
@@ -170,7 +169,6 @@ class Galeri extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0000000),
       body: Align(
         child: Text('Ini Adalah Background'),
         alignment: Alignment.center,
