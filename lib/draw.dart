@@ -79,6 +79,12 @@ class Profil extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
+          Container(
+            margin: EdgeInsets.all(10),
+            width: 200,
+            height: 150,
+            color: Colors.blue,
+          ),
           Text('Nama :Egi Sabta Hiro'),
           Text('Kelas : 2A'),
           Text('NIM  : 362055401002'),
